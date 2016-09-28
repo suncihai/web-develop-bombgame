@@ -1,0 +1,46 @@
+#bombgame_board{
+	width:1400px;
+	height:980px;
+	background:green;
+	border-radius:8px;
+	border:2px solid gray;
+	position: relative;
+}
+
+#bombgame_gif{
+	width:1400px;
+	height:980px;
+}
+
+#bombgame_gif:hover{
+   cursor:pointer;
+}
+
+#bombplate{
+	position:absolute;
+	width:804px;
+	height:804px;
+	left:300px;
+	top:40px;
+	border:2px solid white;
+}
+
+#bombgamestartbtn{
+   	position:absolute;
+	left:550px;
+	bottom:30px;
+}
+
+#quitbomgamebtn{
+	position:absolute;
+	left:700px;
+	bottom:30px;
+}
+
+#bombgameover{
+	position:absolute;
+	font-size:80px;
+	color:red;
+	left:500px;
+	top:350px;
+}

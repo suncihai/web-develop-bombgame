@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bombgame.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.0.0.js"></script>
+    <script type="text/javascript" src="scripts/bombgame.js"></script>
+	<title>bombgame</title>
+</head>
+
+<body ng-controller="myCtrl">
+    <div id="bombgame_gif" ng-show="bombgameswitch1"><img src="images/bombgame.gif" ng-click="switchbombgame(false)"/></div>
+
+    <div id="bombgame_board" ng-show="bombgameswitch2">
+        <div id="bombplate"></div>
+        <button id="bombgamestartbtn" class="btn btn-info" ng-click="bombgamestart()">Start Game</button>
+        <button id="quitbomgamebtn" class="btn btn-success" ng-click="switchbombgame(true)">Quit Game</button>
+        <div id="bombgameover" ng-show="bombgameover">Game Over</div>
+    </div>
+</body>
+</html>
